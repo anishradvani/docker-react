@@ -11,5 +11,5 @@ CMD ["npm", "run", "build"]
 # FROM statements terminate the block prior
 
 FROM nginx
-
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
